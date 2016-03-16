@@ -1,0 +1,7 @@
+{
+    "offlineDir":"src",
+    "onlineDir":"asset",
+    "jsDir":"js",
+    "cssDir":"css",
+    "widgetDir":"widget"
+}
