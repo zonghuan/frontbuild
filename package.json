@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zonghuan/frontbuild"
+    "url": "https://github.com/zonghuan/frontbuild.git"
   },
   "dependencies": {
     "browserify": "12.0.1",
