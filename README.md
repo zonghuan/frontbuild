@@ -35,4 +35,24 @@ frontbuild init
 -widget    // 放置模块的目录
 
 ```
-待续...
+开启解析服务，可以访问线上文件或者线下文件，也可以指定服务的端口
+```
+// 开启服务，这时根目录指向/src，访问线下文件
+// 访问js文件夹下的js文件，会使用browserify解析，访问jsx文件时会使用browserify和reactify解析
+// 访问css文件夹下的less文件，会使用less解析
+frontbuild server offline -p 9000
+
+// 开启服务，这时根目录指向/asset，访问线上文件
+// 这里访问到的文件都是已经打包好的
+frontbuild server online -p 9000
+
+```
+
+打包src下的文件
+
+```
+// 将/src下的文件按相同的路径打包到/asset下
+// less文件会被编译称css文件，js、jsx文件都会被编译成js文件，所以/src路径下，在同样路径中的js、jsx文件不允许同名
+frontbuild build
+```
+
