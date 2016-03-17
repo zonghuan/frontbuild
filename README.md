@@ -1,8 +1,9 @@
 # frontbuild
 前端构建工具
 
+  ![version](https://img.shields.io/github/release/qubyte/rubidium.svg)  ![license](https://img.shields.io/cocoapods/l/AFNetworking.svg) 
 
-============
+=========
 
 ## frontbuild是干什么用的？
 frontbuild是快速搭建前端构建工程的一个命令行工具
