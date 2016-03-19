@@ -1,6 +1,6 @@
 {
   "name": "frontbuild",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "front build tool",
   "main": "index.js",
   "scripts": {

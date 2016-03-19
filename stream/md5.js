@@ -1,6 +1,7 @@
 var through=require('through2');
 var fs=require('fs');
 var path=require('path');
+var option=require('../option.json');
 
 // 获取相应页面的md5
 var getMd5=function(path) {
@@ -32,7 +33,7 @@ module.exports=function(cwd){
 				var distPath=transformSrcFunc($2);
 
 				// 获取目标文件的全路径
-				var fullPath=path.join(cwd,'asset',distPath);
+				var fullPath=path.join(cwd,option.onlineDir,distPath);
 				var md5='';
 
 				if(distPath.indexOf('?')!==-1){

@@ -5,6 +5,7 @@ var fs=require('graceful-fs');
 var path=require('path');
 var vfs=require('vinyl-fs');
 
+// 线下模式 将错误显示到浏览器上
 var showError=function(content) {
     return [
         "var div = document.createElement('pre') ;",
@@ -22,6 +23,7 @@ var showError=function(content) {
 
 var through=require('through2');
 
+// res -> stream
 var resStream=function(res){
     return through.obj(function(file,env,cb){
         res.end(file.contents.toString());

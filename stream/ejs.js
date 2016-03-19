@@ -14,11 +14,14 @@ module.exports=function(option){
             cb(null,file);
 
         }catch(e){
+            // 若解析错误  输出错误信息
             file.contents=new Buffer(e.toString());
 
             if(option.debug===true){
+                // debug模式 错误不往下传
                 cb(null,file);
             }else{
+                // 非debug模式 错误传下去 停止打包的过程 
                 cb(e,file);
             }
         }
