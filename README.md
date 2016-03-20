@@ -3,7 +3,7 @@
 
   ![version](https://img.shields.io/github/release/qubyte/rubidium.svg)  ![license](https://img.shields.io/cocoapods/l/AFNetworking.svg) 
 
-=========
+===
 
 ## frontbuild是干什么用的？
 frontbuild是快速搭建前端构建工程的一个命令行工具
@@ -27,13 +27,13 @@ cd yourProject
 ```
 frontbuild init
 // 这时会生成如下目录结构
--src       // 资源目录 开发的html文件可以放这里  html文件支持ejs
-|--js      // js资源目录 开发的js文件可以放这里  js文件支持browserify jsx文件支持reactjs
-|--css     // css资源目录 开发的less文件可以放这里 less文件支持less解析
--asset     // 打包的资源目录   当打包代码时，frontbuild会将src下的文件打包到这里来
-|--js      
-|--css
--widget    // 放置模块的目录
+├── src       // 资源目录 开发的html文件可以放这里  html文件支持ejs
+    ├──js      // js资源目录 开发的js文件可以放这里  js文件支持browserify jsx文件支持reactjs
+    └──css     // css资源目录 开发的less文件可以放这里 less文件支持less解析
+├── asset     // 打包的资源目录   当打包代码时，frontbuild会将src下的文件打包到这里来
+    ├──js      
+    └──css
+├── widget    // 放置模块的目录
 
 ```
 开启解析服务，可以访问线上文件或者线下文件，也可以指定服务的端口
