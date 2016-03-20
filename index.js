@@ -22,9 +22,6 @@ program
     .option('-p, --port [port]','input your port')
     .description('server port')
     .action(function(mode,option){
-        if(mode!=='online'&&mode!=='offline'){
-            mode='offline';
-        }
         if(mode==='online'){
             // 开启静态解析服务
             require('./opt/static.js')(option.port||80,path.join(cwd,onlineDir));
