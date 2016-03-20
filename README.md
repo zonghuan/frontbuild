@@ -61,7 +61,7 @@ frontbuild server offline -p 9000
 frontbuild server online -p 9000
 ```
 
-## 打包命令
+### 打包命令
 
 将/src下的文件按相同的路径打包到/asset下
 
@@ -73,3 +73,4 @@ js、jsx文件都会被编译成js文件，所以/src路径下，在同样路径
 frontbuild build
 ```
 
+### 待续
