@@ -81,7 +81,7 @@ module.exports=function(cwd){
             .pipe(gulp.dest('./'+onlineDir))
             .pipe(endSign());
     });
-    // 打包js文件
+    // 打包html文件
     gulp.task('html',['css','js','jsx'],function(){
         return gulp
             .src('./'+offlineDir+'/**/*.html',{cwd:cwd})
