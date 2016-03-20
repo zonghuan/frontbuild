@@ -14,16 +14,18 @@ frontbuild是快速搭建前端构建工程的一个命令行工具
 
 
 ## frontbuild怎么使用？
-先安装frontbuild
+
+### 安装frontbuild
 ```
 npm install frontbuild -g
 ```
-接着新建你的项目目录
+
+### 接着新建你的项目目录
 ```
 mkdir yourProject
 cd yourProject
 ```
-初始化项目
+### 初始化项目
 ```
 frontbuild init
 ```
@@ -39,9 +41,11 @@ frontbuild init
 ├── widget    // 放置模块的目录
 ```
 
-开启解析服务，可以访问线上文件或者线下文件，也可以指定服务的端口，如果不指定，默认端口为80
+### 开启解析服务，
 
-开启线下模式，这时根目录指向/src，访问线下文件
+可以开启线下模式和线上模式，用于访问资源文件和打包好的文件，也可以指定服务的端口，如果不指定，默认端口为80
+
+开启线下模式，这时根目录指向/src，访问资源文件
 
 访问js文件夹下的js文件，会使用browserify解析，访问jsx文件时会使用browserify和reactify解析
 
@@ -50,15 +54,14 @@ frontbuild init
 ```
 frontbuild server offline -p 9000
 ```
-开启线上服务，这时根目录指向/asset，访问线上文件
+开启线上服务，这时根目录指向/asset，访问打包好的文件
 
-这里访问到的文件都是已经打包好的
 
 ```
 frontbuild server online -p 9000
 ```
 
-打包命令
+## 打包命令
 
 将/src下的文件按相同的路径打包到/asset下
 
